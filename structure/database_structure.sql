@@ -2,7 +2,7 @@
 DROP SCHEMA IF EXISTS los_artesanos_;
 CREATE DATABASE IF NOT EXISTS los_artesanos_;
 USE los_artesanos_;
-CREATE TABLE tabla_artesano (
+CREATE TABLE tabla_artesanos (
 ID_Art INT PRIMARY KEY AUTO_INCREMENT
 , Nombre_Art VARCHAR(100) 
 , Apellido_Art VARCHAR(100) 
@@ -22,7 +22,7 @@ ID_Prod INT PRIMARY KEY AUTO_INCREMENT
 , ID_Puesto TINYINT
 , Nombre_Prod VARCHAR(100)
 , Moneda VARCHAR(100)
-, Precio_Prod DOUBLE 
+, Precio_Prod DECIMAL(12,4) 
 , Stock_Prod INT 
 );
 
@@ -58,7 +58,7 @@ CREATE TABLE tabla_boleta (
   ID_Boleta int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   ID_Vta mediumint NOT NULL,
   ID_Prod int DEFAULT NULL,
-  Precio_Prod double DEFAULT NULL,
+  Precio_Prod DECIMAL(12,4) DEFAULT NULL,
   Unidad_Prod tinyint DEFAULT NULL
   );
 
@@ -74,7 +74,7 @@ CREATE TABLE auditoria (
   
 CREATE TABLE tabla_factura (
   ID_VtA mediumint DEFAULT NULL,
-  Total_vta double DEFAULT NULL  
+  Total_vta DECIMAL(12,4) DEFAULT NULL  
 );
   
 -- SUBIR BASES DE DATOS CSV --
@@ -107,12 +107,12 @@ FOREIGN KEY (ID_Estruct) REFERENCES tabla_estructura(ID_Estruct)
 
 ALTER TABLE tabla_puestos 
 ADD CONSTRAINT FK_PUESTOS_ARTESANOS
-FOREIGN KEY (ID_Art) REFERENCES tabla_artesano(ID_Art)
+FOREIGN KEY (ID_Art) REFERENCES tabla_artesanos(ID_Art)
 ;
 
 ALTER TABLE tabla_venta
 ADD CONSTRAINT FK_VENTA_ARTESANO
-FOREIGN KEY (ID_Art) REFERENCES tabla_artesano(ID_Art)
+FOREIGN KEY (ID_Art) REFERENCES tabla_artesanos(ID_Art)
 ;
 
 ALTER TABLE tabla_venta

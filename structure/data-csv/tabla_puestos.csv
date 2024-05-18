@@ -1,46 +1,46 @@
-﻿ID_Puesto;ID_Art;ID_Estruct;Nombre_Puesto
-1;1;1;Artesanias de la Naturaleza
-2;2;1;Tesoros del Pasado
-3;3;1;Mundo del Vidrio
-4;4;1;Artesanias del Mundo
-5;5;1;Encanto Artesanal
-6;6;1;Mundo Artesano
-7;7;1;Maravillas Artesanales
-8;8;1;Arte y Pasion
-9;9;1;Maravillas Textiles
-10;10;2;Maravillas del Arte
-11;11;2;Joyas del Mundo
-12;12;2;Hecho a Mano
-13;13;2;Tesoros Hechos a Mano
-14;14;2;Encanto Hecho a Mano
-15;15;2;Belleza Hecha a Mano
-16;16;2;Creaciones con Amor
-17;17;2;Manos Creativas
-18;18;2;Inspiracion Creativa
-19;19;3;Encanto y Belleza
-20;20;3;Mundo Creativo
-21;21;3;Tesoros Textiles
-22;22;3;Hilos y Tejidos
-23;23;3;Fantasia en Papel
-24;24;3;Sueños Artesanales
-25;25;3;Creaciones Fantasticas
-26;26;3;Mundo de la Creatividad
-27;27;3;Creaciones del Corazon
-28;28;3;Maravillas del Arte
-29;29;4;Creatividad en Expansion
-30;30;4;Creaciones del Mundo
-31;31;4;Arte en Ceramica
-32;32;4;Mundo del Vidrio
-33;33;4;Madera y Arte
-34;34;4;Mundo de las Maravillas
-35;35;4;Taller de Artesanias
-36;36;4;Artesanias con Historia
-37;37;4;Encanto y Belleza
-38;38;4;Arte en Detalles
-39;39;5;Rincon de la Inspiracion
-40;40;5;Creaciones del Mundo
-41;41;5;Creatividad en Accion
-42;42;5;Rincones del Arte
-43;43;5;Creaciones con Alma
-44;44;5;Arte y Tradicion
-45;45;5;Tesoros del Arte
+﻿ID_Puesto,ID_Art,ID_Estruct,Nombre_Puesto
+1,1,1,artesanias_de_la_naturaleza
+2,2,1,tesoros_del_pasado
+3,3,1,mundo_del_vidrio
+4,4,1,artesanias_del_mundo
+5,5,1,encanto_artesanal
+6,6,1,mundo_artesano
+7,7,1,maravillas_artesanales
+8,8,1,arte_y_pasion
+9,9,1,maravillas_textiles
+10,10,2,maravillas_del_arte
+11,11,2,joyas_del_mundo
+12,12,2,hecho_a_mano
+13,13,2,tesoros_hechos_a_mano
+14,14,2,encanto_hecho_a_mano
+15,15,2,belleza_hecha_a_mano
+16,16,2,creaciones_con_amor
+17,17,2,manos_creativas
+18,18,2,inspiracion_creativa
+19,19,3,encanto_y_belleza
+20,20,3,mundo_creativo
+21,21,3,tesoros_textiles
+22,22,3,hilos_y_tejidos
+23,23,3,fantasia_en_papel
+24,24,3,suenos_artesanales
+25,25,3,creaciones_fantasticas
+26,26,3,mundo_de_la_creatividad
+27,27,3,creaciones_del_corazon
+28,28,3,maravillas_del_arte
+29,29,4,creatividad_en_expansion
+30,30,4,creaciones_del_mundo
+31,31,4,arte_en_ceramica
+32,32,4,mundo_del_vidrio
+33,33,4,madera_y_arte
+34,34,4,mundo_de_las_maravillas
+35,35,4,taller_de_artesanias
+36,36,4,artesanias_con_historia
+37,37,4,encanto_y_belleza
+38,38,4,arte_en_detalles
+39,39,5,rincon_de_la_inspiracion
+40,40,5,creaciones_del_mundo
+41,41,5,creatividad_en_accion
+42,42,5,rincones_del_arte
+43,43,5,creaciones_con_alma
+44,44,5,arte_y_tradicion
+45,45,5,tesoros_del_arte

@@ -20,7 +20,7 @@ FROM tabla_productos;
 CREATE OR REPLACE VIEW numero_de_artesanos AS 
 SELECT 
     COUNT(*) AS Cantidad_de_Artesanos 
-FROM tabla_artesano;
+FROM tabla_artesanos;
 
 CREATE OR REPLACE VIEW ciudad_de_artesanos AS 
 SELECT 
@@ -55,13 +55,15 @@ LIMIT 10;
 
 -- PROBAR VISTAS --
 
-/* 
+
 SELECT * FROM nombre_en_minuscula_del_producto;
 SELECT * FROM nombre_en_mayuscula_del_producto;
 SELECT * FROM largo_del_nombre_del_producto;
 SELECT * FROM numero_de_artesanos;
 SELECT * FROM ciudad_de_artesanos;
 SELECT * FROM artesanos_por_region;
-SELECT * FROM productos_por_categoria;
+SELECT 'PRODUCTOS' FROM productos_por_categoria;
 SELECT * FROM top_10_ventas;
-*/ 
+SELECT * FROM tabla_artesanos LIMIT 10;
+SELECT * FROM tabla_productos LIMIT 10;
+SELECT * FROM tabla_boleta LIMIT 10;

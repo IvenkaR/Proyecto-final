@@ -1,6 +1,6 @@
-﻿ID_Cat;Nombre_Cat
-1;Accesorios Personales
-2;Artesania Decorativa
-3;Artesania Textil
-4;Hogar y Cocina
-5;Juguetes y Entretenimiento
+﻿ID_Cat,Nombre_Cat
+1,accesorios_personales
+2,artesania_decorativa
+3,artesania_textil
+4,hogar_y_cocina
+5,juguetes_y_entretenimiento

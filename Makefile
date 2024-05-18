@@ -8,6 +8,7 @@ HOST=127.0.0.1
 PORT=3306
 PASSWORD=${ROOT_PASSWORD}
 DATABASE=${DATABASE_NAME}
+CURDATE := $(shell date +%Y%m%d)
 
 DOCKER_COMPOSE_FILE=./docker-compose.yml
 
@@ -46,7 +47,7 @@ test-db:
 	@TABLES=$$(docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -N -B -e "USE $(DATABASE_NAME); SHOW TABLES;"); \
 	for TABLE in $$TABLES; do \
 		echo "Table: $$TABLE"; \
-		docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -N -B -e "USE $(DATABASE_NAME); SELECT * FROM $$TABLE LIMIT 5;"; \
+		docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -e "USE $(DATABASE_NAME); SELECT * FROM $$TABLE LIMIT 5;"; \
 		echo "----------------------------------------------"; \
 	done
 
