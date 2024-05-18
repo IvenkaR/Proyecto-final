@@ -62,7 +62,7 @@ SELECT * FROM largo_del_nombre_del_producto;
 SELECT * FROM numero_de_artesanos;
 SELECT * FROM ciudad_de_artesanos;
 SELECT * FROM artesanos_por_region;
-SELECT 'PRODUCTOS' FROM productos_por_categoria;
+SELECT * FROM productos_por_categoria;
 SELECT * FROM top_10_ventas;
 SELECT * FROM tabla_artesanos LIMIT 10;
 SELECT * FROM tabla_productos LIMIT 10;
