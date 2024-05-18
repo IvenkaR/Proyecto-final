@@ -1,4 +1,4 @@
-USE los_artesanos_;
+USE `los_artesanos_` ;
 
 -- CREAR VISTAS --
 
@@ -20,7 +20,7 @@ FROM tabla_productos;
 CREATE OR REPLACE VIEW numero_de_artesanos AS 
 SELECT 
     COUNT(*) AS Cantidad_de_Artesanos 
-FROM tabla_artesanos;
+FROM tabla_artesano;
 
 CREATE OR REPLACE VIEW ciudad_de_artesanos AS 
 SELECT 

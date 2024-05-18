@@ -2,7 +2,7 @@
 DROP SCHEMA IF EXISTS los_artesanos_;
 CREATE DATABASE IF NOT EXISTS los_artesanos_;
 USE los_artesanos_;
-CREATE TABLE tabla_artesanos (
+CREATE TABLE tabla_artesano (
 ID_Art INT PRIMARY KEY AUTO_INCREMENT
 , Nombre_Art VARCHAR(100) 
 , Apellido_Art VARCHAR(100) 
@@ -107,12 +107,12 @@ FOREIGN KEY (ID_Estruct) REFERENCES tabla_estructura(ID_Estruct)
 
 ALTER TABLE tabla_puestos 
 ADD CONSTRAINT FK_PUESTOS_ARTESANOS
-FOREIGN KEY (ID_Art) REFERENCES tabla_artesanos(ID_Art)
+FOREIGN KEY (ID_Art) REFERENCES tabla_artesano(ID_Art)
 ;
 
 ALTER TABLE tabla_venta
 ADD CONSTRAINT FK_VENTA_ARTESANO
-FOREIGN KEY (ID_Art) REFERENCES tabla_artesanos(ID_Art)
+FOREIGN KEY (ID_Art) REFERENCES tabla_artesano(ID_Art)
 ;
 
 ALTER TABLE tabla_venta

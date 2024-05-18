@@ -1,4 +1,4 @@
-USE los_artesanos_;
+USE `los_artesanos_` ;
 
 -- FUNCIONES --
 
@@ -9,7 +9,7 @@ RETURNS VARCHAR(50)
 DETERMINISTIC
 BEGIN
     DECLARE nombre_artesano VARCHAR(50);
-    SELECT Nombre_Art INTO nombre_artesano FROM tabla_artesanos WHERE ID_Art = p_id;
+    SELECT Nombre_Art INTO nombre_artesano FROM tabla_artesano WHERE ID_Art = p_id;
     RETURN nombre_artesano;
 END//
 
@@ -26,7 +26,7 @@ BEGIN
     DECLARE consulta VARCHAR(20);
     SET consulta = CONCAT('%', p_dato, '%');
     
-    SELECT Email_Art INTO email FROM tabla_artesanos WHERE Email_Art LIKE consulta;
+    SELECT Email_Art INTO email FROM tabla_artesano WHERE Email_Art LIKE consulta;
     RETURN email;
 END//
 

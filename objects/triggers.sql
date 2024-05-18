@@ -1,17 +1,17 @@
-USE los_artesanos_;
+USE `los_artesanos_` ;
 
 -- TRIGGERS --
 
 CREATE TRIGGER trg_after_insert 
 AFTER INSERT ON tabla_venta
 FOR EACH ROW 
-INSERT INTO Auditoria(Accion, Usuario, Fecha_Hora, Observacion) 
+INSERT INTO auditoria(Accion, Usuario, Fecha_Hora, Observacion) 
 VALUES ('INSERT', CURRENT_USER(), NOW(), 'Se insertó correctamente en tabla venta');
 
 CREATE TRIGGER trg_before_delete
 BEFORE DELETE ON tabla_venta
 FOR EACH ROW
-INSERT INTO Auditoria(Accion, Usuario, Fecha_Hora, Observacion, Campo_Anterior)
+INSERT INTO auditoria(Accion, Usuario, Fecha_Hora, Observacion, Campo_Anterior)
 VALUES ('DELETE', CURRENT_USER(), NOW(), 'Se eliminó correctamente en la tabla venta', OLD.ID_Vta);
 
 DELIMITER //
