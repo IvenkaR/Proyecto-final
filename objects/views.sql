@@ -4,12 +4,12 @@ USE `los_artesanos_` ;
 
 CREATE OR REPLACE VIEW nombre_en_minuscula_del_producto AS 
 SELECT 
-    LCASE(Nombre_Prod) AS Nombre_Producto 
+    LCASE(Nombre_Prod) AS Nombre_minuscula 
 FROM tabla_productos;
 
 CREATE OR REPLACE VIEW nombre_en_mayuscula_del_producto AS 
 SELECT 
-    UCASE(Nombre_Prod) AS Nombre_Producto 
+    UCASE(Nombre_Prod) AS Nombre_Mayuscula 
 FROM tabla_productos;
 
 CREATE OR REPLACE VIEW largo_del_nombre_del_producto AS 

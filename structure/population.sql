@@ -1,18 +1,19 @@
+
 USE `los_artesanos_` ;
 
-SET GLOBAL local_infile = true;
+SET GLOBAL local_infile = 1;
+
+-- LOAD DATA LOCAL INFILE '/structure/data-csv/tabla_artesanos.csv'
+-- INTO TABLE tabla_artesanos
+-- FIELDS TERMINATED BY ',' 
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 ROWS;
+
 
 LOAD DATA LOCAL INFILE '/structure/data-csv/tabla_artesanos.csv'
 INTO TABLE tabla_artesanos
-FIELDS TERMINATED BY ',' 
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
-
-LOAD DATA LOCAL INFILE '/structure/data-csv/tabla_boleta.csv'
-INTO TABLE tabla_boleta
-FIELDS TERMINATED BY ',' 
-LINES TERMINATED BY '\n'
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS;
 
 INSERT INTO tabla_categorias (ID_Cat,Nombre_Cat) 
@@ -22,6 +23,8 @@ VALUES
 ,(3,'artesania_textil')
 ,(4,'hogar_y_cocina')
 ,(5,'juguetes_y_entretenimiento');
+
+
 
 INSERT INTO tabla_estructura (ID_Estruct,Sector_Estruct) 
 VALUES 
@@ -629,3 +632,9 @@ VALUES
 -- FIELDS TERMINATED BY ',' 
 -- LINES TERMINATED BY '\n'
 -- IGNORE 1 ROWS;
+
+LOAD DATA LOCAL INFILE '/structure/data-csv/tabla_boleta.csv'
+INTO TABLE tabla_boleta
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;

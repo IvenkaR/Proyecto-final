@@ -30,7 +30,6 @@ up:
 	@echo "Waiting for MySQL to be ready..."
 	bash wait_docker.sh
 
-
 	@echo "Create the import and run de script"
 	docker exec -it mysql mysql -u root -p$(PASSWORD) -e "source $(DATABASE_CREATION);"
 	docker exec -it mysql mysql -u root -p$(PASSWORD) --local-infile=1 -e "source $(DATABASE_POPULATION)"
